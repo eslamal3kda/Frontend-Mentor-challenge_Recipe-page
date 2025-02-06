@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+:root {
+    --main-font: "Outfit", serif; ;
+    --header-font: "Young Serif", serif; ;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--header-font);
+}
+p ,li {
+    color: #5f574e;
+}
+h2 {
+    color: #854632;
+    margin-bottom: 1rem;
+}
+ul ,ol {
+    margin-left: 2rem;
+}
+ul li {
+    padding-inline: 1rem;
+    line-height: 2.6;
+}
+body {
+    background-color: #f3e5d8;
+}
+.my-page {
+    margin: 5rem auto;
+    max-width: 47rem;
+    padding: 3rem;
+    background-color: #FFF;
+    border-radius: 1.5rem;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.main-image img {
+    width: 100%;
+}
+
+.main-title > h1{
+    color: #302d2c;
+}
+.main-title > p {
+    margin-block: 2rem;
+}
+
+.preparation-time {
+    width: 100%;
+    background-color: #f3e5d8;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.preparation-time h3 {
+    color: #7b284f
+}
+
+
+.ingredients,.instructions {
+    margin-block: 2rem;
+}
+
+ol li {
+    margin-bottom: 1rem;
+    padding-inline: 1rem;
+}
+
+.nutrition >p {
+    margin-bottom: 1rem;
+}
+
+
+.nutrition .details .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    border-bottom: 1px solid #854632;
+}
+.nutrition .details .row:last-child{
+    border: 0;
+}
+
+.footer {
+    margin-top: 2rem;
+    padding:  1rem;
+    height: 4rem;
+    background-color: #f3e5d8;
+    color: #5f574e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.footer a {
+    color: #302d2c;
+}
+
+@media(max-width:768px ){
+    .my-page {
+        margin: 0;
+        padding: 0 1.5rem;
+        border-radius: 0;
+    }
+    
+    .footer {
+        border-radius: 0;
+    }
+}
+
+@media(max-width:500px ) {
+    .my-page {
+        padding: 0 0.5rem;
+    }
+    .main-image {
+        border-radius: 0;
+    }
+}
